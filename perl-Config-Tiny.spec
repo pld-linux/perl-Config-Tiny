@@ -6,7 +6,7 @@
 %define	pdir	Config
 %define	pnam	Tiny
 Summary:	Config::Tiny - Read/Write .ini style files with as little code as possible
-#Summary(pl):
+Summary(pl):	Config::Tiny - czytanie/zapisywanie plików w stylu .ini w minimalnym kodzie
 Name:		perl-Config-Tiny
 Version:	2.00
 Release:	1
@@ -26,7 +26,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Config::Tiny is a perl class to read and write .ini style
+Config::Tiny is a Perl class to read and write .ini style
 configuration files with as little code as possible, reducing load
 time and memory overhead. Memory usage is normally scoffed at in Perl,
 but in my opinion should be at least kept in mind.
@@ -38,8 +38,19 @@ or one of the many other Config:: modules. To rephrase, Config::Tiny
 does not preserve your comments, whitespace, or the order of your
 config file.
 
-# %description -l pl
-# TODO
+%description -l pl
+Config::Tiny to klasa Perla do odczytu i zapisu plików
+konfiguracyjnych w stylu .ini przy u¿yciu tak ma³ego kodu, jak to
+mo¿liwe, co zmniejsza czas ³adowania i u¿ycie pamiêci. U¿ycie pamiêci
+jest zwykle wy¶miewane w Perlu, ale zdaniem autora powinno byæ
+przynajmniej brane pod uwagê.
+
+Ten modu³ s³u¿y g³ównie do czytania plików napisanych przez ludzi i
+wszystko co zapisujemy nie powinno potrzebowaæ dokumentacji czy
+komentarzy. Je¶li potrzebujemy czego¶ o wiêkszych mo¿liwo¶ciach,
+mo¿na przerzuciæ siê na Config::Simple, Config::General lub jeden z
+wielu innych modu³ów Config::. Innymi s³owy, Config::Tiny nie
+zachowuje komentarzy, odstêpów ani porz±dku w pliku konfiguracyjnym.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
