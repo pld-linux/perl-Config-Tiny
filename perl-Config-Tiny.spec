@@ -1,10 +1,10 @@
 #
 # Conditional build:
-%bcond_without  tests           # do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Config
-%define	pnam	Tiny
+%define		pdir	Config
+%define		pnam	Tiny
 Summary:	Config::Tiny - Read/Write .ini style files with as little code as possible
 Summary(pl):	Config::Tiny - czytanie/zapisywanie plików w stylu .ini w minimalnym kodzie
 Name:		perl-Config-Tiny
