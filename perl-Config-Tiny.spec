@@ -6,7 +6,7 @@
 %define		pdir	Config
 %define		pnam	Tiny
 Summary:	Config::Tiny - Read/Write .ini style files with as little code as possible
-Summary(pl):	Config::Tiny - czytanie/zapisywanie plików w stylu .ini w minimalnym kodzie
+Summary(pl.UTF-8):   Config::Tiny - czytanie/zapisywanie plikÃ³w w stylu .ini w minimalnym kodzie
 Name:		perl-Config-Tiny
 Version:	2.10
 Release:	1
@@ -38,19 +38,19 @@ or one of the many other Config:: modules. To rephrase, Config::Tiny
 does not preserve your comments, whitespace, or the order of your
 config file.
 
-%description -l pl
-Config::Tiny to klasa Perla do odczytu i zapisu plików
-konfiguracyjnych w stylu .ini przy u¿yciu tak ma³ego kodu, jak to
-mo¿liwe, co zmniejsza czas ³adowania i u¿ycie pamiêci. U¿ycie pamiêci
-jest zwykle wy¶miewane w Perlu, ale zdaniem autora powinno byæ
-przynajmniej brane pod uwagê.
+%description -l pl.UTF-8
+Config::Tiny to klasa Perla do odczytu i zapisu plikÃ³w
+konfiguracyjnych w stylu .ini przy uÅ¼yciu tak maÅ‚ego kodu, jak to
+moÅ¼liwe, co zmniejsza czas Å‚adowania i uÅ¼ycie pamiÄ™ci. UÅ¼ycie pamiÄ™ci
+jest zwykle wyÅ›miewane w Perlu, ale zdaniem autora powinno byÄ‡
+przynajmniej brane pod uwagÄ™.
 
-Ten modu³ s³u¿y g³ównie do czytania plików napisanych przez ludzi i
-wszystko co zapisujemy nie powinno potrzebowaæ dokumentacji czy
-komentarzy. Je¶li potrzebujemy czego¶ o wiêkszych mo¿liwo¶ciach,
-mo¿na przerzuciæ siê na Config::Simple, Config::General lub jeden z
-wielu innych modu³ów Config::. Innymi s³owy, Config::Tiny nie
-zachowuje komentarzy, odstêpów ani porz±dku w pliku konfiguracyjnym.
+Ten moduÅ‚ sÅ‚uÅ¼y gÅ‚Ã³wnie do czytania plikÃ³w napisanych przez ludzi i
+wszystko co zapisujemy nie powinno potrzebowaÄ‡ dokumentacji czy
+komentarzy. JeÅ›li potrzebujemy czegoÅ› o wiÄ™kszych moÅ¼liwoÅ›ciach,
+moÅ¼na przerzuciÄ‡ siÄ™ na Config::Simple, Config::General lub jeden z
+wielu innych moduÅ‚Ã³w Config::. Innymi sÅ‚owy, Config::Tiny nie
+zachowuje komentarzy, odstÄ™pÃ³w ani porzÄ…dku w pliku konfiguracyjnym.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
