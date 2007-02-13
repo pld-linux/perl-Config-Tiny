@@ -6,7 +6,7 @@
 %define		pdir	Config
 %define		pnam	Tiny
 Summary:	Config::Tiny - Read/Write .ini style files with as little code as possible
-Summary(pl.UTF-8):   Config::Tiny - czytanie/zapisywanie plików w stylu .ini w minimalnym kodzie
+Summary(pl.UTF-8):	Config::Tiny - czytanie/zapisywanie plików w stylu .ini w minimalnym kodzie
 Name:		perl-Config-Tiny
 Version:	2.10
 Release:	1
