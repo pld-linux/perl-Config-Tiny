@@ -9,7 +9,7 @@ Summary:	Config::Tiny - Read/Write .ini style files with as little code as possi
 Summary(pl.UTF-8):	Config::Tiny - czytanie/zapisywanie plików w stylu .ini w minimalnym kodzie
 Name:		perl-Config-Tiny
 Version:	2.12
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
