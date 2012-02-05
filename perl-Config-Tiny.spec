@@ -13,14 +13,14 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Config/ADAMK/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Config/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	498b8fd37a190a214cddd5506be77720
 URL:		http://search.cpan.org/dist/Config-Tiny/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl(FindBin)
-BuildRequires:	perl-Test-Simple
+BuildRequires:	perl-Test-Simple >= 0.47
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
