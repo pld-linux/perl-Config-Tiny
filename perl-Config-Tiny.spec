@@ -8,18 +8,19 @@
 Summary:	Config::Tiny - Read/Write .ini style files with as little code as possible
 Summary(pl.UTF-8):	Config::Tiny - czytanie/zapisywanie plików w stylu .ini w minimalnym kodzie
 Name:		perl-Config-Tiny
-Version:	2.14
+Version:	2.23
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Config/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	498b8fd37a190a214cddd5506be77720
+Source0:	http://www.cpan.org/modules/by-module/Config/%{pdir}-%{pnam}-%{version}.tgz
+# Source0-md5:	6c3bc610c4bc587e1441e651e01584ce
 URL:		http://search.cpan.org/dist/Config-Tiny/
-BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	perl-devel >= 1:5.8.1
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(FindBin)
+BuildRequires:	perl(File::Spec) >= 3.30
+BuildRequires:	perl-File-Temp >= 0.22
 BuildRequires:	perl-Test-Simple >= 0.47
 %endif
 BuildArch:	noarch
@@ -75,4 +76,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_vendorlib}/Config/Tiny.pm
-%{_mandir}/man3/*
+%{_mandir}/man3/Config::Tiny.3pm*
