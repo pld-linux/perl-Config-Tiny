@@ -1,20 +1,21 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	Config
 %define		pnam	Tiny
 Summary:	Config::Tiny - Read/Write .ini style files with as little code as possible
 Summary(pl.UTF-8):	Config::Tiny - czytanie/zapisywanie plików w stylu .ini w minimalnym kodzie
 Name:		perl-Config-Tiny
-Version:	2.26
+Version:	2.30
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Config/%{pdir}-%{pnam}-%{version}.tgz
-# Source0-md5:	760485706daa91a22485421c3c2b1e1d
-URL:		https://metacpan.org/release/Config-Tiny
+Source0:	https://www.cpan.org/modules/by-module/Config/%{pdir}-%{pnam}-%{version}.tgz
+# Source0-md5:	b497217a7b7f41007ce215c3d47ad7a1
+URL:		https://metacpan.org/dist/Config-Tiny
+BuildRequires:	perl-ExtUtils-MakeMaker
 BuildRequires:	perl-devel >= 1:5.8.1
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	rpmbuild(macros) >= 1.745
